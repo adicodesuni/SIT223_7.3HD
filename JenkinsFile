@@ -57,7 +57,7 @@ pipeline {
             }
             post {
                 failure {
-                    echo '[ROLLBACK] Release validation failed! Triggering automatic rollback support...' [cite: 96]
+                    echo '[ROLLBACK] Release validation failed! Triggering automatic rollback support...'
                     sh "docker compose down"
                 }
             }
